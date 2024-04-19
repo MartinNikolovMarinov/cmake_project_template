@@ -13,13 +13,3 @@
 using namespace coretypes;
 
 bool initCore(i32 argc, char** argv);
-
-// Hashing functions for some core types:
-
-template<> addr_size core::hash(const core::StrView& key);
-template<> addr_size core::hash(const i32& key);
-template<> addr_size core::hash(const u32& key);
-
-template<> bool core::eq(const core::StrView& a, const core::StrView& b);
-template<> bool core::eq(const i32& a, const i32& b);
-template<> bool core::eq(const u32& a, const u32& b);

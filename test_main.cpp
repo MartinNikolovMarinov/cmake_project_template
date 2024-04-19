@@ -15,6 +15,13 @@ int main(i32 argc, char** argv) {
     if constexpr (OS_MAC == 1)     { std::cout << "[OS] OS_MAC" << std::endl; }
     if constexpr (OS_UNKNOWN == 1) { std::cout << "[OS] OS_UNKNOWN" << std::endl; }
 
+    if constexpr (UNNAMED_PROJECT_DEBUG == 1) {
+        std::cout << "[MODE] DEBUG" << std::endl;
+    }
+    else {
+        std::cout << "[MODE] RELEASE" << std::endl;
+    }
+
     // Print CPU architecture
     std::cout << "[CPU ARCH] " << CPU_ARCH << std::endl;
 
